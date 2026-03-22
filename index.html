@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>SrulLogic | מומחה פיתוח תוכנה וייעוץ אבטחת סייבר</title>
+    <meta name="description" content="שירותי פיתוח תוכנה מתקדמים וייעוץ אבטחת סייבר לעסקים. פתרונות טכנולוגיים מותאמים אישית ברמה הגבוהה ביותר.">
+    <meta name="keywords" content="מתכנת, סייבר, אבטחת מידע, פיתוח אפליקציות, ייעוץ טכנולוגי, SrulLogic">
+
+    <style>
+        :root {
+            --primary: #6366f1; /* סגול טכנולוגי */
+            --secondary: #0ea5e9; /* כחול סייבר */
+            --dark: #0f172a;
+            --light: #f8fafc;
+            --accent: #22c55e; /* ירוק אבטחה */
+        }
+
+        body {
+            font-family: 'Segoe UI', system-ui, sans-serif;
+            background-color: var(--dark);
+            color: var(--light);
+            margin: 0;
+            line-height: 1.6;
+            scroll-behavior: smooth;
+        }
+
+        /* ניווט */
+        nav {
+            background: rgba(15, 23, 42, 0.9);
+            backdrop-filter: blur(10px);
+            position: fixed;
+            top: 0; width: 100%;
+            z-index: 1000;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+        }
+        .nav-container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .nav-links { display: flex; gap: 20px; }
+        .nav-links a { 
+            text-decoration: none; color: var(--light); 
+            font-weight: 500; font-size: 0.9rem; transition: 0.3s;
+        }
+        .nav-links a:hover { color: var(--primary); }
+
+        /* לוגו קבוע */
+        .logo-box {
+            width: 50px; height: 50px;
+            background: white; border-radius: 10px;
+            display: flex; align-items: center; justify-content: center;
+            overflow: hidden; flex-shrink: 0;
+        }
+        .logo-box img { width: 100%; height: 100%; object-fit: cover; }
+
+        /* מקטע פתיחה - Hero */
+        .hero {
+            padding: 150px 20px 100px;
+            text-align: center;
+            background: radial-gradient(circle at top right, rgba(99, 102, 241, 0.15), transparent);
+        }
+        .hero h1 { font-size: 3rem; margin: 0; background: linear-gradient(90deg, #fff, var(--primary)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .hero p { font-size: 1.2rem; color: #94a3b8; max-width: 600px; margin: 20px auto; }
+        .btn-main {
+            background: var(--primary); color: white; border: none; padding: 12px 30px;
+            border-radius: 50px; font-weight: bold; cursor: pointer; text-decoration: none;
+            display: inline-block; transition: 0.3s;
+        }
+        .btn-main:hover { transform: translateY(-3px); box-shadow: 0 10px 20px rgba(99, 102, 241, 0.4); }
+
+        /* שירותים */
+        .services {
+            max-width: 1100px; margin: 50px auto;
+            display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px; padding: 0 20px;
+        }
+        .service-card {
+            background: rgba(255,255,255,0.03);
+            border: 1px solid rgba(255,255,255,0.1);
+            padding: 30px; border-radius: 20px;
+            transition: 0.3s;
+        }
+        .service-card:hover { border-color: var(--primary); background: rgba(255,255,255,0.05); }
+        .service-card h3 { color: var(--secondary); margin-top: 0; }
+        .service-card i { font-size: 2rem; color: var(--accent); }
+
+        /* צור קשר */
+        .contact {
+            max-width: 600px; margin: 100px auto;
+            padding: 40px; background: #1e293b; border-radius: 30px; text-align: center;
+        }
+        .contact input, .contact textarea {
+            width: 100%; padding: 15px; margin-bottom: 15px;
+            background: #0f172a; border: 1px solid #334155;
+            border-radius: 10px; color: white; box-sizing: border-box;
+        }
+        
+        footer {
+            text-align: center; padding: 40px; border-top: 1px solid rgba(255,255,255,0.1);
+            font-size: 0.8rem; color: #64748b;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2rem; }
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <div class="nav-container">
+        <div class="logo-box">
+            <img src="logo.png" alt="Logo" onerror="this.src='https://via.placeholder.com/50?text=S'">
+        </div>
+        <div class="nav-links">
+            <a href="#home">בית</a>
+            <a href="#services">שירותים</a>
+            <a href="#contact">צור קשר</a>
+            <a href="https://github.com/cohenisrael1" target="_blank">פרויקטים</a>
+        </div>
+    </div>
+</nav>
+
+<section class="hero" id="home">
+    <h1>פתרונות קוד ואבטחה מתקדמים</h1>
+    <p>מתכנת Full-Stack ויועץ אבטחת סייבר. אני עוזר לעסקים לבנות מערכות חזקות, מהירות ומאובטחות מפני איומים.</p>
+    <a href="#contact" class="btn-main">בואו נדבר טכנולוגיה</a>
+</section>
+
+<section class="services" id="services">
+    <div class="service-card">
+        <h3>💻 פיתוח תוכנה</h3>
+        <p>בניית מערכות מורכבות, אתרי אינטרנט ואפליקציות תוך דגש על ביצועים וחווית משתמש מושלמת.</p>
+    </div>
+    <div class="service-card">
+        <h3>🛡️ ייעוץ סייבר</h3>
+        <p>בדיקות חדירות, הערכת סיכונים והקשחת מערכות כדי להבטיח שהמידע שלכם נשאר מוגן.</p>
+    </div>
+    <div class="service-card">
+        <h3>🚀 ליווי טכנולוגי</h3>
+        <p>ייעוץ לאדריכלות תוכנה, בחירת שפת תכונה מתאימה ושיפור תהליכי פיתוח בארגון.</p>
+    </div>
+</section>
+
+<section class="contact" id="contact">
+    <h2>צרו קשר</h2>
+    <p>זמין לייעוץ או לפרויקטים חדשים</p>
+    <form>
+        <input type="text" placeholder="שם מלא" required>
+        <input type="email" placeholder="אימייל" required>
+        <textarea placeholder="איך אוכל לעזור?" rows="5"></textarea>
+        <button type="submit" class="btn-main" style="width: 100%;">שלח הודעה</button>
+    </form>
+</section>
+
+<footer>
+    © 2026 SrulLogic Systems | Built for Performance & Security
+</footer>
+
+</body>
+</html>
